@@ -1,0 +1,8 @@
+#!/home/chirag/Downloads/shared-files-8a63da5e-276f-4501-9620-a1c02154d609/pagesnap/venv/bin/python3.11
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
