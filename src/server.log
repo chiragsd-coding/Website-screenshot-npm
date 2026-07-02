@@ -1,0 +1,55 @@
+nohup: ignoring input
+2026-07-01 07:21:48 [[32minfo[39m]: Database initialized successfully
+2026-07-01 07:21:48 [[32minfo[39m]: 🚀 PageSnap Microservice running live in development mode
+2026-07-01 07:21:48 [[32minfo[39m]: 📡 Server listening on port 3000 (bound to 0.0.0.0)
+2026-07-01 07:24:04 [[32minfo[39m]: Processing screenshot for URL: https://example.com (Viewport: desktop, FullPage: false)
+2026-07-01 07:24:04 [[32minfo[39m]: Take screenshot request for: https://example.com
+2026-07-01 07:26:08 [[32minfo[39m]: Processing screenshot for URL: https://example.com (Viewport: desktop, FullPage: false)
+2026-07-01 07:26:08 [[32minfo[39m]: Take screenshot request for: https://example.com
+2026-07-01 07:26:08 [[32minfo[39m]: Processing screenshot for URL: https://example.com (Viewport: desktop, FullPage: false)
+2026-07-01 07:26:08 [[32minfo[39m]: Take screenshot request for: https://example.com
+2026-07-01 07:26:08 [[32minfo[39m]: Processing screenshot for URL: https://example.com (Viewport: mobile, FullPage: false)
+2026-07-01 07:26:08 [[32minfo[39m]: Take screenshot request for: https://example.com
+2026-07-01 07:26:08 [[32minfo[39m]: Processing screenshot for URL: https://example.com/cache-test-1782890768259 (Viewport: desktop, FullPage: false)
+2026-07-01 07:26:08 [[32minfo[39m]: Take screenshot request for: https://example.com/cache-test-1782890768259
+2026-07-01 07:26:08 [[32minfo[39m]: Launching a new browser process (pool size: 0/3)
+2026-07-01 07:26:08 [[32minfo[39m]: Navigating to: https://example.com/cache-test-1782890768259 (Wait strategy: load, Tier: free)
+2026-07-01 07:26:08 [[33mwarn[39m]: Page returned non-2xx status: 404 for https://example.com/cache-test-1782890768259
+2026-07-01 07:26:08 [[32minfo[39m]: Processing screenshot for URL: https://example.com/cache-test-1782890768259 (Viewport: desktop, FullPage: false)
+2026-07-01 07:26:08 [[32minfo[39m]: Take screenshot request for: https://example.com/cache-test-1782890768259
+2026-07-01 07:26:08 [[32minfo[39m]: Processing screenshot for URL: https://example.com (Viewport: desktop, FullPage: true)
+2026-07-01 07:26:08 [[32minfo[39m]: Take screenshot request for: https://example.com
+2026-07-01 07:26:43 [[32minfo[39m]: Processing screenshot for URL: https://example.com (Viewport: desktop, FullPage: false)
+2026-07-01 07:26:43 [[32minfo[39m]: Take screenshot request for: https://example.com
+2026-07-01 07:26:43 [[32minfo[39m]: Processing screenshot for URL: https://example.com (Viewport: desktop, FullPage: false)
+2026-07-01 07:26:43 [[32minfo[39m]: Take screenshot request for: https://example.com
+2026-07-01 07:26:43 [[32minfo[39m]: Processing screenshot for URL: https://example.com (Viewport: mobile, FullPage: false)
+2026-07-01 07:26:43 [[32minfo[39m]: Take screenshot request for: https://example.com
+2026-07-01 07:26:43 [[32minfo[39m]: Processing screenshot for URL: https://example.com/cache-test-1782890803600 (Viewport: desktop, FullPage: false)
+2026-07-01 07:26:43 [[32minfo[39m]: Take screenshot request for: https://example.com/cache-test-1782890803600
+2026-07-01 07:26:43 [[32minfo[39m]: Navigating to: https://example.com/cache-test-1782890803600 (Wait strategy: load, Tier: free)
+2026-07-01 07:26:43 [[33mwarn[39m]: Page returned non-2xx status: 404 for https://example.com/cache-test-1782890803600
+2026-07-01 07:26:43 [[32minfo[39m]: Processing screenshot for URL: https://example.com/cache-test-1782890803600 (Viewport: desktop, FullPage: false)
+2026-07-01 07:26:43 [[32minfo[39m]: Take screenshot request for: https://example.com/cache-test-1782890803600
+2026-07-01 07:26:43 [[32minfo[39m]: Processing screenshot for URL: https://example.com (Viewport: desktop, FullPage: true)
+2026-07-01 07:26:43 [[32minfo[39m]: Take screenshot request for: https://example.com
+2026-07-01 07:31:48 [[32minfo[39m]: Closing idle/expired browser process 14ojgdj (uses: 2)
+2026-07-02 12:15:56 [[32minfo[39m]: Processing screenshot for URL: https://example.com (Viewport: desktop, FullPage: false)
+2026-07-02 12:15:56 [[32minfo[39m]: Take screenshot request for: https://example.com
+2026-07-02 12:15:56 [[32minfo[39m]: Launching a new browser process (pool size: 0/3)
+2026-07-02 12:15:56 [[32minfo[39m]: Navigating to: https://example.com (Wait strategy: load, Tier: free)
+2026-07-02 12:15:56 [[32minfo[39m]: Processing screenshot for URL: https://example.com (Viewport: desktop, FullPage: false)
+2026-07-02 12:15:56 [[32minfo[39m]: Take screenshot request for: https://example.com
+2026-07-02 12:15:56 [[32minfo[39m]: Processing screenshot for URL: https://example.com (Viewport: mobile, FullPage: false)
+2026-07-02 12:15:56 [[32minfo[39m]: Take screenshot request for: https://example.com
+2026-07-02 12:15:56 [[32minfo[39m]: Navigating to: https://example.com (Wait strategy: load, Tier: free)
+2026-07-02 12:15:56 [[32minfo[39m]: Processing screenshot for URL: https://example.com/cache-test-1782994556822 (Viewport: desktop, FullPage: false)
+2026-07-02 12:15:56 [[32minfo[39m]: Take screenshot request for: https://example.com/cache-test-1782994556822
+2026-07-02 12:15:56 [[32minfo[39m]: Navigating to: https://example.com/cache-test-1782994556822 (Wait strategy: load, Tier: free)
+2026-07-02 12:15:56 [[33mwarn[39m]: Page returned non-2xx status: 404 for https://example.com/cache-test-1782994556822
+2026-07-02 12:15:56 [[32minfo[39m]: Processing screenshot for URL: https://example.com/cache-test-1782994556822 (Viewport: desktop, FullPage: false)
+2026-07-02 12:15:56 [[32minfo[39m]: Take screenshot request for: https://example.com/cache-test-1782994556822
+2026-07-02 12:15:56 [[32minfo[39m]: Processing screenshot for URL: https://example.com (Viewport: desktop, FullPage: true)
+2026-07-02 12:15:56 [[32minfo[39m]: Take screenshot request for: https://example.com
+2026-07-02 12:15:57 [[32minfo[39m]: Navigating to: https://example.com (Wait strategy: load, Tier: free)
+2026-07-02 12:21:13 [[32minfo[39m]: Closing idle/expired browser process ycn8yll (uses: 4)
