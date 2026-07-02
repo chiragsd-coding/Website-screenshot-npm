@@ -9,6 +9,7 @@ A plug-and-play microservice API that renders full-page website screenshots on d
 - **Enterprise-ready billing**: Integrated with Stripe, Razorpay, and Cashify.
 - **Scalable**: Dockerized and ready for container orchestration.
 - **Performance**: Built-in caching and optimized browser pool management.
+- **Documentation**: Built-in API documentation served at the root.
 
 ## Tech Stack
 
@@ -51,15 +52,21 @@ docker-compose up --build
 
 ### Health Checks
 
-- `GET /api/health`: Basic health status.
-- `GET /api/ready`: Readiness check (checks database connectivity).
+- `GET /health`: Basic health status.
+- `GET /v1/usage`: Usage statistics for the current API key.
 
-### Screenshot API (In Progress)
+### Screenshot API
 
-`POST /api/screenshot`
+`POST /v1/screenshot`
 - `url`: The URL to capture.
 - `viewport`: `desktop`, `mobile`, or `tablet`.
 - `fullPage`: boolean.
+- `format`: `png`, `jpeg`, or `webp`.
+
+### Subscription Management
+
+- `GET /v1/subscription`: Get current subscription details.
+- `POST /v1/subscription`: Create or update a subscription.
 
 ## Payment Gateway Setup
 
@@ -69,8 +76,9 @@ Set `PAYMENT_GATEWAY=stripe` and provide `STRIPE_SECRET_KEY`.
 ### Razorpay
 Set `PAYMENT_GATEWAY=razorpay` and provide `RAZORPAY_KEY_ID` and `RAZORPAY_KEY_SECRET`.
 
-### Cashify
+### Cashify (Local Simulation)
 Set `PAYMENT_GATEWAY=cashify` and provide `CASHIFY_API_KEY`.
+Use `/v1/payments/cashify/simulate` to test payment flows.
 
 ## Environment Variables
 
