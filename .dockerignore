@@ -7,4 +7,6 @@ dist
 Dockerfile
 docker-compose.yml
 pagesnap.db
+database.sqlite
 logs
+.cache
