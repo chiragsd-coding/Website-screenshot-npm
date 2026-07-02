@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PageSnap - Professional Website Screenshot API</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-camera-retro text-indigo-600 text-2xl"></i>
+                <span class="text-2xl font-bold text-gray-800 tracking-tight">PageSnap</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#features" class="text-gray-600 hover:text-indigo-600 font-medium">Features</a>
+                <a href="#pricing" class="text-gray-600 hover:text-indigo-600 font-medium">Pricing</a>
+                <a href="/docs.html" class="text-gray-600 hover:text-indigo-600 font-medium">API Docs</a>
+                <a href="/docs.html" class="bg-indigo-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-indigo-700 transition">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+                Pixel-Perfect Screenshots <br> as a Service
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 text-indigo-100 max-w-2xl mx-auto">
+                Generate high-quality full-page, mobile, and tablet screenshots of any website with a simple REST API call.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+                <a href="/docs.html" class="bg-white text-indigo-600 px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-gray-100 transition">
+                    Try the API Now
+                </a>
+                <a href="#features" class="bg-indigo-500 text-white border border-indigo-400 px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-indigo-400 transition">
+                    Explore Features
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Why Choose PageSnap?</h2>
+                <p class="text-xl text-gray-600">Built for developers who need reliability and scale.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-desktop text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Multi-Viewport</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Capture websites exactly as they appear on desktop, tablet, or mobile devices with our pre-defined presets or custom dimensions.
+                    </p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-expand text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Full-Page Capture</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Don't just capture above the fold. Our engine automatically scrolls to trigger lazy-loaded images and captures the entire length of the page.
+                    </p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-credit-card text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Flexible Billing</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Integrated with Stripe, Razorpay, and Cashify. Pay in your local currency with a subscription model that grows with you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Snippet -->
+    <section class="py-24 bg-gray-900 text-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h2 class="text-4xl font-bold mb-6">Simple Integration</h2>
+                <p class="text-xl text-gray-400 mb-8">
+                    Get up and running in minutes. Our REST API is documented, predictable, and powerful.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-indigo-500 mr-3"></i>
+                        <span>Secure API Key Authentication</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-indigo-500 mr-3"></i>
+                        <span>JSON Response with Image URL or Binary</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-indigo-500 mr-3"></i>
+                        <span>Webhook Support for Async Rendering</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="md:w-1/2 md:pl-12">
+                <div class="bg-gray-800 p-6 rounded-xl shadow-2xl font-mono text-sm">
+                    <div class="flex space-x-2 mb-4">
+                        <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                        <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                        <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                    </div>
+                    <p class="text-gray-500 mb-2">// Take a mobile screenshot</p>
+                    <p><span class="text-pink-500">POST</span> /v1/screenshot</p>
+                    <p><span class="text-indigo-400">Headers:</span> { "X-API-Key": "ps_live_..." }</p>
+                    <p><span class="text-indigo-400">Body:</span> {</p>
+                    <p class="pl-4">"url": "https://example.com",</p>
+                    <p class="pl-4">"preset": "mobile",</p>
+                    <p class="pl-4">"fullPage": true</p>
+                    <p>}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-xl text-gray-600">Choose the plan that fits your needs.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Free Plan -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2">Free</h3>
+                    <div class="text-3xl font-bold mb-6">$0<span class="text-sm text-gray-500 font-normal">/mo</span></div>
+                    <ul class="text-gray-600 space-y-4 mb-8 flex-grow">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 50 screenshots/mo</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Desktop Viewport</li>
+                        <li><i class="fas fa-times text-red-500 mr-2"></i> Full Page Capture</li>
+                    </ul>
+                    <a href="/docs.html" class="block text-center border border-indigo-600 text-indigo-600 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition">Get Started</a>
+                </div>
+                <!-- Pro Plan -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border-2 border-indigo-500 flex flex-col transform scale-105 relative">
+                    <div class="absolute top-0 right-0 bg-indigo-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg uppercase">Popular</div>
+                    <h3 class="text-xl font-bold mb-2">Pro</h3>
+                    <div class="text-3xl font-bold mb-6">$29<span class="text-sm text-gray-500 font-normal">/mo</span></div>
+                    <ul class="text-gray-600 space-y-4 mb-8 flex-grow">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 2,000 screenshots/mo</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> All Viewports</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Full Page Capture</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Priority Support</li>
+                    </ul>
+                    <a href="/docs.html" class="block text-center bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">Get Started</a>
+                </div>
+                <!-- Business Plan -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2">Business</h3>
+                    <div class="text-3xl font-bold mb-6">$99<span class="text-sm text-gray-500 font-normal">/mo</span></div>
+                    <ul class="text-gray-600 space-y-4 mb-8 flex-grow">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 10,000 screenshots/mo</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Webhook Callbacks</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Custom TTL</li>
+                    </ul>
+                    <a href="/docs.html" class="block text-center border border-indigo-600 text-indigo-600 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition">Get Started</a>
+                </div>
+                <!-- Enterprise Plan -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2">Enterprise</h3>
+                    <div class="text-3xl font-bold mb-6">Custom</div>
+                    <ul class="text-gray-600 space-y-4 mb-8 flex-grow">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Unlimited screenshots</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Dedicated Infra</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 99.9% SLA</li>
+                    </ul>
+                    <a href="mailto:sales@pagesnap.com" class="block text-center border border-indigo-600 text-indigo-600 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-12">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                <i class="fas fa-camera-retro text-indigo-600 text-xl"></i>
+                <span class="text-xl font-bold text-gray-800 tracking-tight">PageSnap</span>
+            </div>
+            <div class="text-gray-500 text-sm">
+                &copy; 2026 PageSnap API. All rights reserved.
+            </div>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
