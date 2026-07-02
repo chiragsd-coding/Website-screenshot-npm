@@ -2,10 +2,15 @@ import express, { Request, Response } from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import crypto from 'crypto';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import { config } from './config/index.js';
 import { logger } from './utils/logger.js';
 import { errorHandlerMiddleware } from './api/middleware/errorHandler.js';
 import { db, initDb } from './db/index.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Initialize database schema
 initDb();
@@ -37,6 +42,14 @@ app.use(
 );
 
 app.use(express.urlencoded({ extended: true }));
+
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, '../public')));
+
+// Root path serves the landing page
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/index.html'));
+});
 
 // Serve health check
 app.get('/health', (req, res) => {
