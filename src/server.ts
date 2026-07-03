@@ -21,6 +21,7 @@ import subscriptionRoutes from './api/routes/subscription.js';
 import webhookRoutes from './api/routes/webhooks.js';
 import usageRoutes from './api/routes/usage.js';
 import cacheRoutes from './api/routes/cache.js';
+import dashboardRoutes from './api/routes/dashboard.js';
 
 const app = express();
 
@@ -174,6 +175,7 @@ app.use('/v1/subscription', subscriptionRoutes);
 app.use('/v1/webhooks/payment', webhookRoutes);
 app.use('/v1/usage', usageRoutes);
 app.use('/v1/cache', cacheRoutes);
+app.use('/dashboard', dashboardRoutes);
 
 // Global Error Handler
 app.use(errorHandlerMiddleware);
